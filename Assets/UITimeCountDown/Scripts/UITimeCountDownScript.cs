@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-namespace NameUITimeCountDownScript
+namespace SpaceUITimeCountDownScript
 {
     public class UITimeCountDownScript : MonoBehaviour
     {
@@ -16,12 +16,12 @@ namespace NameUITimeCountDownScript
             {
                 _timeRemaining -= Time.deltaTime;
             } else {
-                Debug.Log("Finsih Time");
+                Debug.Log("Finish Time");
             }
 
             TimeText.text = "Time: " + _timeRemaining.ToString("f0");            
-            TimeText.text = "Time: " + _timeRemaining.ToString("F2"); //2 Decimals with Points
-            TimeText.text = "Time: " + _timeRemaining.ToString("F2", System.Globalization.CultureInfo.InvariantCulture); //2 Decimals
+            TimeText.text = "Time: " + _timeRemaining.ToString("F2"); //2 Decimals with coma
+            TimeText.text = "Time: " + _timeRemaining.ToString("F2", System.Globalization.CultureInfo.InvariantCulture); //2 Decimals with points
 
         }
     }

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace FirstPersonScene
+namespace SpaceFirstPersonScene
 {
     public class PlayerController : MonoBehaviour
     {
