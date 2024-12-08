@@ -7,32 +7,32 @@ namespace SpaceBarHealthUI
 
     public class BarHealthUI : MonoBehaviour
     {
-        [SerializeField] private Image healthBar;
-        [SerializeField] private TMP_Text healthText;
-        private float valueMax;
-        private float valueActual;
+        [SerializeField] private Image _healthBar;
+        [SerializeField] private TMP_Text _healthText;
+        private float _valueMax;
+        private float _valueActual;
 
         private void Start()
         {
-            valueMax = 10f;
-            valueActual = 5f;
+            _valueMax = 10f;
+            _valueActual = 5f;
             RefreshUI();
         }
 
         private void Update()
         {
             if(Input.GetKeyDown(KeyCode.A)) {
-                if(valueActual > 0)
+                if(_valueActual > 0)
                 {
-                    valueActual -= 1f;
+                    _valueActual -= 1f;
                     RefreshUI();
                 }
             }
 
             if(Input.GetKeyDown(KeyCode.D)) {
-                if(valueActual < valueMax)
+                if(_valueActual < _valueMax)
                 {
-                    valueActual += 1f;
+                    _valueActual += 1f;
                     RefreshUI();
                 }
             }
@@ -40,8 +40,8 @@ namespace SpaceBarHealthUI
 
         private void RefreshUI()
         {
-            healthBar.fillAmount = valueActual / valueMax;
-            healthText.text = $"{valueActual}/{valueMax}";
+            _healthBar.fillAmount = _valueActual / _valueMax;
+            _healthText.text = $"{_valueActual}/{_valueMax}";
         }
 
     }

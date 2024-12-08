@@ -4,13 +4,12 @@ namespace SpaceFirstPersonScene
 {
     public class CameraController : MonoBehaviour
     {
-        public Transform target;
-        public Camera theCam;
+        [SerializeField] private Transform _target;
 
         void LateUpdate()
         {
-            transform.position = target.position;
-            transform.rotation = target.rotation;
+            transform.position = _target.position;
+            transform.rotation = _target.rotation;
         }
     }
 

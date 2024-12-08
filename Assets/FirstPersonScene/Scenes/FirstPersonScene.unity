@@ -42,7 +42,8 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 12
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -118,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &105534263 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6153267044160073046, guid: 48e625d37a249314a91e0139be190bfb, type: 3}
+  m_PrefabInstance: {fileID: 372978831}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &372978831
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -166,6 +172,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5288365907789218942, guid: 48e625d37a249314a91e0139be190bfb, type: 3}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 105534263}
     - target: {fileID: 6400630940634250172, guid: 48e625d37a249314a91e0139be190bfb, type: 3}
       propertyPath: m_Name
       value: PlayerActor
