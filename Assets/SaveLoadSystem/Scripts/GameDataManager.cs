@@ -10,7 +10,7 @@ namespace SpaceSaveLoadSystem
     public class GameDataManager : MonoBehaviour
     {
         public Dictionary<string, GameData> gameDataDictionary = new Dictionary<string, GameData>();
-        private string _filePath;
+        private string _filePath; //C:\Users\TUUSUARIO\AppData\LocalLow\DefaultCompany\Sintaxis Libreria Unity
         private string _encryptionKey = "mi_clave_segura";
         public static GameDataManager Instance;
 
