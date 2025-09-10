@@ -14,6 +14,7 @@ namespace SpaceBarHealthUI
 
         private void Start()
         {
+            Application.targetFrameRate = 60;
             _valueMax = 10f;
             _valueActual = 5f;
             RefreshUI();

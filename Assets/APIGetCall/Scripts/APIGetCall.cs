@@ -19,6 +19,7 @@ namespace SpaceAPIGetCall
 
         private void Start()
         {
+            Application.targetFrameRate = 60;
             OnRefresh();
         }
 

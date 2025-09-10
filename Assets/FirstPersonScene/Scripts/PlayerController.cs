@@ -24,6 +24,7 @@ namespace SpaceFirstPersonScene
 
         private void Start()
         {
+            Application.targetFrameRate = 60;
             _inAcPlayerController.Enable();
             _inAcPlayerController.Movement.CustomAction.performed += ctx => CallCustomAction();
 

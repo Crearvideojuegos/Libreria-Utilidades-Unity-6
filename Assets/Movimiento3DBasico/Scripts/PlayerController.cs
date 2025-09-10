@@ -18,14 +18,13 @@ namespace SpaceMovimiento3DBasico
 
         //Animator
         private int _IdIsMovement;
-
-
+        
         private void Awake()
         {
             if (Instance == null)
-            { 
+            {
                 Instance = this;
-            } 
+            }
             _inAcPlayerController = new InAcPlayerControllerM3DBasico();
             _characterController = GetComponent<CharacterController>();
             animator = GetComponent<Animator>();
@@ -35,6 +34,7 @@ namespace SpaceMovimiento3DBasico
 
         private void Start()
         {
+            Application.targetFrameRate = 60;
             _inAcPlayerController.Enable();
         }
 

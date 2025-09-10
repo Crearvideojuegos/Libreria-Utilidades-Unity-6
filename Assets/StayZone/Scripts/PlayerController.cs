@@ -27,6 +27,7 @@ namespace SpaceStayZone
 
         private void Start()
         {
+            Application.targetFrameRate = 60;
             _inAcStayZone.Enable();
         }
 
@@ -38,8 +39,11 @@ namespace SpaceStayZone
                 if (TimeRemaining > 0)
                 {
                     TimeRemaining -= Time.deltaTime;
-                } else {
-                    Debug.Log("Bye");
+                    Debug.Log("TimeRemaining: " + TimeRemaining);
+                }
+                else
+                {
+                    Debug.Log("You are dead");
                 }
             }
         }

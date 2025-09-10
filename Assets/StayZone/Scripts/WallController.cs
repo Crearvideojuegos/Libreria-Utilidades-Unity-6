@@ -8,11 +8,13 @@ namespace SpaceStayZone
         {
             if (other.CompareTag("Player"))
             {
-                if(PlayerController.Instance.IsInZone)
+                if (PlayerController.Instance.IsInZone)
                 {
                     PlayerController.Instance.IsInZone = false;
                     PlayerController.Instance.TimeRemaining = 5f;
-                } else {
+                }
+                else
+                {
                     PlayerController.Instance.IsInZone = true;
                 }
             }

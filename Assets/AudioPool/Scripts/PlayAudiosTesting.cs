@@ -6,7 +6,12 @@ namespace SpaceAudioPool
     {
         [SerializeField] private AudioClip[] _testingSounds;
 
-        void Update()
+        private void Start()
+        { 
+            Application.targetFrameRate = 60;
+        }
+
+        private void Update()
         {
             if(Input.GetKeyDown(KeyCode.Q))
             {

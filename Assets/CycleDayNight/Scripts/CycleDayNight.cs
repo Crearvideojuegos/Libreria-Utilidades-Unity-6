@@ -26,6 +26,7 @@ namespace SpaceCycleDayNight
 
         private void Start()
         {
+            Application.targetFrameRate = 60;
             _timeRate = 1.0f / _fulldayLength;
             _time = _startTime;
         }

@@ -34,6 +34,7 @@ namespace SpaceSaveLoadSystem
 
         private void Start()
         {
+            Application.targetFrameRate = 60;
             _inAcSaveLoadSystem.Enable();
             _inAcSaveLoadSystem.Movement.Pause.performed += ctx => Pause();
             _panelPause.SetActive(false);
